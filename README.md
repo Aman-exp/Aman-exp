@@ -1,7 +1,8 @@
 ## 👋 Hi, I'm Aman
 
-I'm an individual with a established foundation in **Mathematics**, currently exploring the world of **data**.  
-My interests include **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that allows me to engage deeply with mathematical concepts. I'm particularly drawn to research-oriented work.
+I'm an individual with a solid foundation in **Mathematics**, currently delving into the world of **data**.  
+My interests lie in **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that challenges me to apply and expand mathematical thinking.  
+I'm especially drawn to research-driven work and enjoy exploring complex, theory-rich problems.
 
 ---
 
