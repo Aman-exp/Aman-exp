@@ -23,7 +23,7 @@ I'm especially drawn to research-driven work and enjoy exploring complex, theory
 Here are some of the tools and technologies I work with:
 
 - **Languages**: Python, R, SQL
-- **Libraries & Frameworks**: Pandas, NumPy, Sklearn, PyTorch, TensorFlow, Keras, NLTK, R-Shiny, GPT (OpenAI), LangChain
+- **Libraries & Frameworks**: Pandas, NumPy, Sklearn, PyTorch, TensorFlow, Keras, NLTK, OpenCV, R-Shiny, GPT (OpenAI), LangChain
 - **Tools**:  MySQL, RStudio, RMarkdown, MLflow, AWS, MLOps, Docker, CI/CD
 - **Others**: LaTeX, WSL, Git
 
