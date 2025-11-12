@@ -31,4 +31,3 @@ Here are some of the tools and technologies I work with:
 ## 📬 How to Reach Me
 
 - 📧 Email: [amanbhoot@gmail.com](mailto:amanbhoot@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/aman-7b4077230](https://www.linkedin.com/in/aman-7b4077230/)
