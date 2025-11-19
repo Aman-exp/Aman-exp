@@ -2,9 +2,9 @@
 
 I'm an individual with a established foundation in **Mathematics**, currently delving into the world of **data**.  
 My interests lie in **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that challenges me to apply and expand mathematical thinking.  
-I'm especially drawn to research-driven work and enjoy exploring complex, theory-rich problems.
+I'm especially drawn to research-driven work and enjoy exploring complex, theory rich problems.
 
-📬 I’m open to collaboration on **academic research** and **industrial projects**—especially those grounded in mathematical or data-intensive domains.
+📬 I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
 
 ---
 
