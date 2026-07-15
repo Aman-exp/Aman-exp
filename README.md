@@ -1,14 +1,14 @@
-## 👋 Hi, I'm Aman
+## Hi, I'm Aman
 
-I'm an individual with a established foundation in **Mathematics**, currently delving into the world of **data**.  
+I'm an individual with an established foundation in **Mathematics**, currently delving into the world of **data**.  
 My interests lie in **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that challenges me to apply and expand mathematical thinking.  
 I'm especially drawn to research-driven work and enjoy exploring complex, theory rich problems.
 
-📬 I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
+I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
 
 ---
 
-## 🎓 Education
+## Education
 
 - **Bachelor of Mathematics (Hons.)**  
   *Indian Statistical Institute, Bangalore* (2019 – 2022)
@@ -18,7 +18,7 @@ I'm especially drawn to research-driven work and enjoy exploring complex, theory
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 Here are some of the tools and technologies I work with:
 
@@ -27,7 +27,9 @@ Here are some of the tools and technologies I work with:
 - **Tools**:  MySQL, RStudio, RMarkdown, MLflow, AWS, MLOps, Docker, CI/CD
 - **Others**: LaTeX, WSL, Git
 
----
-## 📬 How to Reach Me
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Aman-exp&layout=donut&theme=tokyonight)
 
-- 📧 Email: [amanbhoot@gmail.com](mailto:amanbhoot@gmail.com)  
+---
+## How to Reach Me
+
+- 📧 Email: [amanbhoot84@gmail.com](mailto:amanbhoot84@gmail.com)  
