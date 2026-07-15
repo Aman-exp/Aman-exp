@@ -27,7 +27,7 @@ Here are some of the tools and technologies I work with:
 - **Tools**:  MySQL, RStudio, RMarkdown, MLflow, AWS, MLOps, Docker, CI/CD
 - **Others**: LaTeX, WSL, Git
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Aman-exp&layout=donut&theme=tokyonight)
+![Top Languages](https://github-readme-stats.Aman-exp.com/api/top-langs?username=Aman-exp)
 
 ---
 ## How to Reach Me
