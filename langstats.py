@@ -52,36 +52,69 @@ def render_donut_svg(totals, path="stats.svg", top_n=8):
     total = sum(totals.values())
     items = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:top_n]
 
-    cx, cy, r, stroke = 110, 110, 80, 24
+    width, height = 440, 220
+    cx, cy, r, stroke = 110, 110, 78, 20
     circumference = 2 * math.pi * r
+    gap = 6  # px gap between segments
     offset = 0
     segments = []
-    for lang, val in items:
+    for i, (lang, val) in enumerate(items):
         pct = val / total
-        length = pct * circumference
+        length = max(pct * circumference - gap, 1)
         color = COLORS.get(lang, DEFAULT_COLOR)
         segments.append(
-            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" '
-            f'stroke="{color}" stroke-width="{stroke}" '
+            f'<circle class="seg" cx="{cx}" cy="{cy}" r="{r}" fill="none" '
+            f'stroke="{color}" stroke-width="{stroke}" stroke-linecap="round" '
             f'stroke-dasharray="{length} {circumference - length}" '
-            f'stroke-dashoffset="{-offset}" transform="rotate(-90 {cx} {cy})"/>'
+            f'stroke-dashoffset="{-offset}" transform="rotate(-90 {cx} {cy})" '
+            f'style="animation-delay:{i * 120}ms"/>'
         )
-        offset += length
+        offset += pct * circumference
+
+    top_lang, top_val = items[0]
+    top_pct = round(top_val / total * 100, 1)
 
     legend = ""
     for i, (lang, val) in enumerate(items):
         pct = round(val / total * 100, 1)
         color = COLORS.get(lang, DEFAULT_COLOR)
-        y = 30 + i * 22
+        y = 46 + i * 22
         legend += (
-            f'<rect x="240" y="{y}" width="12" height="12" fill="{color}"/>'
-            f'<text x="258" y="{y + 11}" font-size="13" font-family="sans-serif">'
-            f'{lang} {pct}%</text>'
+            f'<circle cx="248" cy="{y - 4}" r="6" fill="{color}"/>'
+            f'<text x="262" y="{y}" class="legend-lang">{lang}</text>'
+            f'<text x="420" y="{y}" class="legend-pct" text-anchor="end">{pct}%</text>'
         )
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220">
-{''.join(segments)}
-{legend}
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+  <style>
+    text {{ font-family: 'Segoe UI', -apple-system, system-ui, sans-serif; }}
+    .card {{ fill: #ffffff; stroke: #e1e4e8; }}
+    .title {{ fill: #24292f; font-size: 15px; font-weight: 600; }}
+    .center-num {{ fill: #24292f; font-size: 22px; font-weight: 700; }}
+    .center-label {{ fill: #6e7781; font-size: 11px; }}
+    .legend-lang {{ fill: #24292f; font-size: 13px; }}
+    .legend-pct {{ fill: #6e7781; font-size: 13px; }}
+    .seg {{
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+      opacity: 0;
+      animation: fade-in 0.5s ease-out forwards;
+    }}
+    @keyframes fade-in {{ to {{ opacity: 1; }} }}
+    @media (prefers-color-scheme: dark) {{
+      .card {{ fill: #0d1117; stroke: #30363d; }}
+      .title {{ fill: #e6edf3; }}
+      .center-num {{ fill: #e6edf3; }}
+      .center-label {{ fill: #8b949e; }}
+      .legend-lang {{ fill: #e6edf3; }}
+      .legend-pct {{ fill: #8b949e; }}
+    }}
+  </style>
+  <rect class="card" x="1" y="1" width="{width - 2}" height="{height - 2}" rx="14"/>
+  <text x="20" y="28" class="title">Most Used Languages</text>
+  {''.join(segments)}
+  <text x="{cx}" y="{cy - 4}" text-anchor="middle" class="center-num">{top_pct}%</text>
+  <text x="{cx}" y="{cy + 14}" text-anchor="middle" class="center-label">{top_lang}</text>
+  {legend}
 </svg>'''
 
     with open(path, "w") as f:
