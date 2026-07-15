@@ -1,31 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="260" viewBox="0 0 460 260">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <defs>
+    <linearGradient id="grad0" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#df732f"/><stop offset="100%" stop-color="#DA5B0B"/></linearGradient><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f8cce"/><stop offset="100%" stop-color="#3178c6"/></linearGradient><linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5387b2"/><stop offset="100%" stop-color="#3572A5"/></linearGradient><linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e76646"/><stop offset="100%" stop-color="#e34c26"/></linearGradient><linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f3e472"/><stop offset="100%" stop-color="#f1e05a"/></linearGradient><linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#979797"/><stop offset="100%" stop-color="#858585"/></linearGradient><linearGradient id="grad6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ae46b"/><stop offset="100%" stop-color="#89e051"/></linearGradient><linearGradient id="grad7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#979797"/><stop offset="100%" stop-color="#858585"/></linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <linearGradient id="cardBgDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
   <style>
     text { font-family: 'Segoe UI', -apple-system, system-ui, sans-serif; }
-    .card { fill: #ffffff; stroke: #e1e4e8; }
-    .title { fill: #24292f; font-size: 15px; font-weight: 600; }
-    .center-num { fill: #24292f; font-size: 22px; font-weight: 700; }
-    .center-label { fill: #6e7781; font-size: 11px; }
-    .legend-lang { fill: #24292f; font-size: 13px; }
-    .legend-pct { fill: #6e7781; font-size: 13px; }
-    .seg {
-      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
-      opacity: 0;
-      animation: fade-in 0.5s ease-out forwards;
-    }
-    @keyframes fade-in { to { opacity: 1; } }
+    .card { fill: url(#cardBg); stroke: #e1e4e8; }
+    .title { fill: #24292f; font-size: 16px; font-weight: 700; letter-spacing: 0.2px; }
+    .subtitle { fill: #6e7781; font-size: 11px; }
+    .center-num { fill: #24292f; font-size: 26px; font-weight: 800; }
+    .center-label { fill: #6e7781; font-size: 11px; letter-spacing: 0.3px; }
+    .legend-lang { fill: #24292f; font-size: 13px; font-weight: 500; }
+    .legend-pct { fill: #57606a; font-size: 13px; font-weight: 600; }
+    .divider { stroke: #e1e4e8; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #0d1117; stroke: #30363d; }
+      .card { fill: url(#cardBgDark); stroke: #30363d; }
       .title { fill: #e6edf3; }
+      .subtitle { fill: #8b949e; }
       .center-num { fill: #e6edf3; }
       .center-label { fill: #8b949e; }
       .legend-lang { fill: #e6edf3; }
-      .legend-pct { fill: #8b949e; }
+      .legend-pct { fill: #b1bac4; }
+      .divider { stroke: #30363d; }
     }
   </style>
-  <rect class="card" x="1" y="1" width="458" height="258" rx="14"/>
-  <text x="20" y="28" class="title">Most Used Languages</text>
-  <circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#DA5B0B" stroke-width="20" stroke-linecap="butt" stroke-dasharray="451.0175410713675 39.07091288864024" stroke-dashoffset="0" transform="rotate(-90 120 150)" style="animation-delay:0ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#3178c6" stroke-width="20" stroke-linecap="butt" stroke-dasharray="19.66588679733002 470.4225671626777" stroke-dashoffset="-456.0175410713675" transform="rotate(-90 120 150)" style="animation-delay:120ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#3572A5" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-480.6834278686975" transform="rotate(-90 120 150)" style="animation-delay:240ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#e34c26" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-483.6885155176437" transform="rotate(-90 120 150)" style="animation-delay:360ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#f1e05a" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-486.6786936909336" transform="rotate(-90 120 150)" style="animation-delay:480ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#858585" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-488.9366509486589" transform="rotate(-90 120 150)" style="animation-delay:600ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#89e051" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-489.82450102061114" transform="rotate(-90 120 150)" style="animation-delay:720ms"/><circle class="seg" cx="120" cy="150" r="78" fill="none" stroke="#858585" stroke-width="20" stroke-linecap="butt" stroke-dasharray="1 489.0884539600077" stroke-dashoffset="-490.05035196666387" transform="rotate(-90 120 150)" style="animation-delay:840ms"/>
-  <text x="120" y="146" text-anchor="middle" class="center-num">93.0%</text>
-  <text x="120" y="164" text-anchor="middle" class="center-label">Jupyter Notebook</text>
-  <circle cx="258" cy="42.0" r="6" fill="#DA5B0B"/><text x="272" y="46.0" class="legend-lang">Jupyter Notebook</text><text x="440" y="46.0" class="legend-pct" text-anchor="end">93.0%</text><circle cx="258" cy="66.0" r="6" fill="#3178c6"/><text x="272" y="70.0" class="legend-lang">TypeScript</text><text x="440" y="70.0" class="legend-pct" text-anchor="end">5.0%</text><circle cx="258" cy="90.0" r="6" fill="#3572A5"/><text x="272" y="94.0" class="legend-lang">Python</text><text x="440" y="94.0" class="legend-pct" text-anchor="end">0.6%</text><circle cx="258" cy="114.0" r="6" fill="#e34c26"/><text x="272" y="118.0" class="legend-lang">HTML</text><text x="440" y="118.0" class="legend-pct" text-anchor="end">0.6%</text><circle cx="258" cy="138.0" r="6" fill="#f1e05a"/><text x="272" y="142.0" class="legend-lang">JavaScript</text><text x="440" y="142.0" class="legend-pct" text-anchor="end">0.5%</text><circle cx="258" cy="162.0" r="6" fill="#858585"/><text x="272" y="166.0" class="legend-lang">GDScript</text><text x="440" y="166.0" class="legend-pct" text-anchor="end">0.2%</text><circle cx="258" cy="186.0" r="6" fill="#89e051"/><text x="272" y="190.0" class="legend-lang">Shell</text><text x="440" y="190.0" class="legend-pct" text-anchor="end">0.0%</text><circle cx="258" cy="210.0" r="6" fill="#858585"/><text x="272" y="214.0" class="legend-lang">Dockerfile</text><text x="440" y="214.0" class="legend-pct" text-anchor="end">0.0%</text>
+  <rect class="card" x="2" y="2" width="476" height="296" rx="16" filter="url(#shadow)"/>
+  <text x="24" y="34" class="title">Most Used Languages</text>
+  <text x="24" y="52" class="subtitle">across all repositories</text>
+  <line class="divider" x1="24" y1="66" x2="456" y2="66"/>
+  <circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad0)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="474.2664336737732 40.95476151495285" stroke-dashoffset="0" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad1)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="20.923414198023746 494.2977809907023" stroke-dashoffset="-479.2664336737732" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad2)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-505.1898478717969" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad3)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-508.49497218906413" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad4)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-511.6375969788801" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad5)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-514.0106704351234" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad6)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-514.9437852811485" transform="rotate(-90 130 168)"/><circle cx="130" cy="168" r="82" fill="none" stroke="url(#grad7)" stroke-width="22" stroke-linecap="butt" stroke-dasharray="1 514.221195188726" stroke-dashoffset="-515.1811506623184" transform="rotate(-90 130 168)"/>
+  <text x="130" y="166" text-anchor="middle" class="center-num">93.0%</text>
+  <text x="130" y="184" text-anchor="middle" class="center-label">JUPYTER NOTEBOOK</text>
+  <circle cx="286" cy="47.5" r="5.5" fill="#DA5B0B"/><text x="302" y="51.5" class="legend-lang">Jupyter Notebook</text><text x="452" y="51.5" class="legend-pct" text-anchor="end">93.0%</text><circle cx="286" cy="74.5" r="5.5" fill="#3178c6"/><text x="302" y="78.5" class="legend-lang">TypeScript</text><text x="452" y="78.5" class="legend-pct" text-anchor="end">5.0%</text><circle cx="286" cy="101.5" r="5.5" fill="#3572A5"/><text x="302" y="105.5" class="legend-lang">Python</text><text x="452" y="105.5" class="legend-pct" text-anchor="end">0.6%</text><circle cx="286" cy="128.5" r="5.5" fill="#e34c26"/><text x="302" y="132.5" class="legend-lang">HTML</text><text x="452" y="132.5" class="legend-pct" text-anchor="end">0.6%</text><circle cx="286" cy="155.5" r="5.5" fill="#f1e05a"/><text x="302" y="159.5" class="legend-lang">JavaScript</text><text x="452" y="159.5" class="legend-pct" text-anchor="end">0.5%</text><circle cx="286" cy="182.5" r="5.5" fill="#858585"/><text x="302" y="186.5" class="legend-lang">GDScript</text><text x="452" y="186.5" class="legend-pct" text-anchor="end">0.2%</text><circle cx="286" cy="209.5" r="5.5" fill="#89e051"/><text x="302" y="213.5" class="legend-lang">Shell</text><text x="452" y="213.5" class="legend-pct" text-anchor="end">0.0%</text><circle cx="286" cy="236.5" r="5.5" fill="#858585"/><text x="302" y="240.5" class="legend-lang">Dockerfile</text><text x="452" y="240.5" class="legend-pct" text-anchor="end">0.0%</text>
 </svg>
