@@ -52,10 +52,10 @@ def render_donut_svg(totals, path="stats.svg", top_n=8):
     total = sum(totals.values())
     items = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)[:top_n]
 
-    width, height = 440, 220
-    cx, cy, r, stroke = 110, 110, 78, 20
+    width, height = 460, 260
+    cx, cy, r, stroke = 120, 150, 78, 20
     circumference = 2 * math.pi * r
-    gap = 6  # px gap between segments
+    gap = 5  # px gap between segments
     offset = 0
     segments = []
     for i, (lang, val) in enumerate(items):
@@ -64,7 +64,7 @@ def render_donut_svg(totals, path="stats.svg", top_n=8):
         color = COLORS.get(lang, DEFAULT_COLOR)
         segments.append(
             f'<circle class="seg" cx="{cx}" cy="{cy}" r="{r}" fill="none" '
-            f'stroke="{color}" stroke-width="{stroke}" stroke-linecap="round" '
+            f'stroke="{color}" stroke-width="{stroke}" stroke-linecap="butt" '
             f'stroke-dasharray="{length} {circumference - length}" '
             f'stroke-dashoffset="{-offset}" transform="rotate(-90 {cx} {cy})" '
             f'style="animation-delay:{i * 120}ms"/>'
@@ -74,15 +74,16 @@ def render_donut_svg(totals, path="stats.svg", top_n=8):
     top_lang, top_val = items[0]
     top_pct = round(top_val / total * 100, 1)
 
+    legend_start = (height - (len(items) - 1) * 24) / 2
     legend = ""
     for i, (lang, val) in enumerate(items):
         pct = round(val / total * 100, 1)
         color = COLORS.get(lang, DEFAULT_COLOR)
-        y = 46 + i * 22
+        y = legend_start + i * 24
         legend += (
-            f'<circle cx="248" cy="{y - 4}" r="6" fill="{color}"/>'
-            f'<text x="262" y="{y}" class="legend-lang">{lang}</text>'
-            f'<text x="420" y="{y}" class="legend-pct" text-anchor="end">{pct}%</text>'
+            f'<circle cx="258" cy="{y - 4}" r="6" fill="{color}"/>'
+            f'<text x="272" y="{y}" class="legend-lang">{lang}</text>'
+            f'<text x="440" y="{y}" class="legend-pct" text-anchor="end">{pct}%</text>'
         )
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
