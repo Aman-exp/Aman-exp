@@ -27,7 +27,8 @@ Here are some of the tools and technologies I work with:
 - **Tools**:  MySQL, RStudio, RMarkdown, MLflow, AWS, MLOps, Docker, CI/CD
 - **Others**: LaTeX, WSL, Git
 
-![Top Languages](https://github-readme-stats.tuhidulhossain.com/api/top-langs?username=Aman-exp)
+[[![Top Languages](https://github-readme-stats.tuhidulhossain.com/api/top-langs?username=Aman-exp)
+](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username={Aman-exp}&theme={dark}&exclude={exclude})
 
 ---
 ## How to Reach Me
