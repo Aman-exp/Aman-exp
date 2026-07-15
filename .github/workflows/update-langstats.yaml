@@ -20,7 +20,7 @@ jobs:
       - run: python langstats.py
         env:
           GH_USERNAME: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.STATS_PAT }}
+          GH_TOKEN: ${{ secrets.STATS }}
 
       - name: Commit updated SVG
         run: |
