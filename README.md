@@ -1,20 +1,9 @@
-## Hi, I'm Aman
+## Aman here..
 
-I'm an individual with an established foundation in **Mathematics**, currently delving into the world of **data**.  
 My interests lie in **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that challenges me to apply and expand mathematical thinking.  
 I'm especially drawn to research-driven work and enjoy exploring complex, theory rich problems.
 
 I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
-
----
-
-## Education
-
-- **Bachelor of Mathematics (Hons.)**  
-  *Indian Statistical Institute, Bangalore* (2019 – 2022)
-
-- **Master of Science in Data Science**  
-  *Chennai Mathematical Institute* (2023 – 2025)
 
 ---
 
