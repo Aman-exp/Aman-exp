@@ -1,9 +1,7 @@
 ## Aman here..
 
 My interests lie in **Machine Learning**, **Artificial Intelligence**, **Quantitative Finance**, and any domain that challenges me to apply and expand mathematical thinking.  
-I'm especially drawn to research-driven work and enjoy exploring complex, theory rich problems.
-
-I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
+I’m especially drawn to research-driven work and enjoy exploring complex, theory-rich problems, and I’m open to collaboration on **academic research** and **industrial projects**, especially those grounded in mathematical domains.
 
 ---
 
